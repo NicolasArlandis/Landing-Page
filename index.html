@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprenser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapperConteiner--dark">
+    <div class="wrapperConteiner--dark wrapperContainer wrapperContainer-fixed">
         <header class="header container">
             <img src="imagens/logoAprenser.png" alt="Logo Aprenser">
-            <nav class="header_nab">
+            <nav class="header_nav">
                 <ul>
                     <li><a href="#cursos">Cursos</a></li>
                     <li><a href="#escolas">Nossa Escola</a></li>
@@ -21,59 +26,66 @@
 
     <div class="wrapperContainer-hero">
         <section class="container heroBanner">
-            <h1>O saber é o que transforma nosso SER</h1>
-            <a href="#" class="btn" target="_blank">Saiba mais</a>
+            <div class="header_content">
+                <h1 class="hero_tittle">O saber é o que transforma nosso <span>ser</span></h1>
+                <a href="#" class="btn" target="_blank">Saiba mais</a>
+            </div>
             <img src="imagens/HeroImage.png" alt="Mulher segurando flores">
         </section>
     </div>
 
-    <div class="wrapperContainer--light">
-        <section id="cursos" class="cursos container">
-            <h2>Principais Cursos</h2>
+    <div class="wrapperContainer wrapperContainer-light wrapperContainer-padded" id="cursos">
+        <section class="cursos container">
+            <h2 class="section_title">Principais Cursos</h2>
             <div class="cursosContainer">
                 <article class="curso_card">
-                <img src="imagens/curso-design.png" alt="Curso Design">
-                <div class="cursos_card_content">
-                    <h3>Design para Web</h3>
-                    <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs atraentes e funcionais para sites e aplicativos móveis.
-                        </p>
+                    <img src="imagens/curso-design.png" alt="Curso design">
+                    <div class="cursos_card_content">
+                        <h3>Design para web</h3>
+                        <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs
+                            atraentes e funcionais para sites e aplicativos móveis.</p>
                     </div>
                 </article>
-            </div>
+
                 <article class="curso_card">
-                <img src="imagens/curso-design-1.png" alt="Curso Front End">
-                <div class="cursos_card_content">
-                    <h3>Front End Developer</h3>
-                    <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web, aplicativos on-line ou até mesmo aplicações para aparelhos celulares
-                        </p>
+                    <img src="imagens/curso-design-1.png" alt="Curso Front-end">
+                    <div class="cursos_card_content">
+                        <h3>Front End Developer</h3>
+                        <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web,
+                            aplicativos on-line ou até mesmo aplicações para aparelhos celulares</p>
                     </div>
                 </article>
-            </div>
+
                 <article class="curso_card">
-                <img src="imagens/curso-design-2.png" alt="Curso Back End">
-                <div class="cursos_card_content">
-                    <h3>Back End Developer</h3>
-                    <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de dados e aprenderá como funciona o protocolo HTTP na prática.
-                        </p>
+                    <img src="imagens/curso-design-2.png" alt="Curso Back-end">
+                    <div class="cursos_card_content">
+                        <h3>Back End Developer</h3>
+                        <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de
+                            dados e aprenderá como funciona o protocolo HTTP na prática.</p>
                     </div>
+
+
                 </article>
             </div>
-            <a href="#" class="btn"> Ver mais cursos</a>
+            <a href="#" class="btn section_btn">Ver mais cursos</a>
         </section>
     </div>
 
-    <div class="wrapperContainer-dark2">
-        <section id="escolas" class="container">
+    <div id="escolas" class="wrapperContainer-dark2 wrapperContainer wrapperContainer-padded">
+        <section class="container escola wrapperContainer-padded">
             <img src="imagens/nossa-escola.png" alt="Mulher jovem feliz">
-            <h2>Nossa Escola</h2>
-            <p>Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de tecnologia online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.
-            </p>
+            <div class="escola_content">
+                <h2>Nossa Escola</h2>
+                <p>Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de tecnologia online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.
+                </p>
+            </div>
         </section>
     </div>
 
-    <div class="wrapperContainer--light">
-        <section class="container" id="Contatos">
-            <h2>Contatos</h2>
+    <div class="wrapperContainer--light wrapperContainer wrapperContainer-padded"  id="contatos">
+        <section class="container">
+            <h2 class="section_title">Contatos</h2>
+            
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.195889439654!2d-46.64099192489093!3d-23.561407078799757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a44cd7248d%3A0x8a2103e91837bd66!2sAv.%20da%20Liberdade%2C%201001%20-%20Liberdade%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001503-001!5e0!3m2!1spt-BR!2sbr!4v1699547511433!5m2!1spt-BR!2sbr" width="100%" height="525" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <address>
                 Av. da Liberdade, 1001<br>
@@ -84,7 +96,7 @@
     </div>    
 
     <div class="wrapperContainer-dark">
-        <footer>
+        <footer class="footer">
             Desenvolvido por <a href="https://github.com/NicolasArlandis" target="_blank">Nicolas</a>
         </footer>
     </div>
